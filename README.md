@@ -5,6 +5,8 @@
 
 **For the best masterclass experience**, take the time to get everything installed correctly and make sure it's running properly. We're, like, serious about this.
 
+**Note:** If you don't want to set everything up on your own laptop, or if your laptop is a bit old, or you'd just rather work online, then you can follow [these instructions for using CodeSandbox.io](./code-sandbox-README.md). We recommend signing in with a GitHub account (and registering with GitHub if you don't already have one).
+
 ## Setup
 
 If you have access to a Mac (or a Linux laptop), you'll find this process much easier. But if you must use Windows, you'll find plenty of help online, so don't despair. Windows, especially Windows 10, has made working with Node much easier.
