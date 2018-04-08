@@ -439,3 +439,11 @@ git add -A
 git commit -m "Remove cruft"
 git push
 ```
+
+It will look like this in the terminal:
+
+![Cruft commit push](./assets/cruft-commit-push.png)
+
+Check your code on GitHub by reloading the page and you should see all the latest changes there.
+
+Congratulations! You're ready to rock and roll with React and Tic-Tac-Toe. See you at the Summer of Tech 2018 Masterclass.
