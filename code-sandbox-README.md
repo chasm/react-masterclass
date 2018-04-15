@@ -5,7 +5,7 @@
 
 Use these instructions if you prefer to complete the Masterclass using [codesandbox.io](https://codesandbox.io/).
 
-Simply open your browser to [codesandbox](https://codesandbox.io/s/github/test-er-8-or/tic-tac-toe), then click the "Fork" button to create your own copy of the code. Bookmark that URL. You can come back to it at any time. We've done all the set up for you.
+Simply open your browser to [our application template](https://codesandbox.io/s/github/test-er-8-or/tic-tac-toe/tree/00-set-up), then click the "Fork" button to create your own copy of the code. Bookmark that URL. You can come back to it at any time. We've done all the set up for you.
 
 This is the fastest way to go, but it does have some drawbacks. For one thing, set up and configuration is, we kid you not, the _hardest_ part of being a programmer. And the most annoying. The sad truth is that programmers (and especially web developers) spend way more time than we should trying to get everything set up and working properly. Efforts at standardisation and virtualisation have improved things somewhat, but there is still a long way to go.
 

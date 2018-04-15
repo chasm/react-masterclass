@@ -138,7 +138,7 @@ In your terminal, hold the Control key down and hit the C key to stop your appli
 From within your project root folder, type the following in the terminal:
 
 ```bash
-yarn add prettier-standard
+yarn add -D prettier-standard
 ```
 
 Whistle a happy tune while the process completes. (Or not, if whistling is not your thing.)
@@ -288,7 +288,6 @@ If anything is not working, check the code in this repository (particularly the 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "prettier-standard": "^8.0.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"
@@ -311,7 +310,8 @@ If anything is not working, check the code in this repository (particularly the 
   },
   "devDependencies": {
     "husky": "^0.14.3",
-    "lint-staged": "^7.0.4"
+    "lint-staged": "^7.0.4",
+    "prettier-standard": "^8.0.1"
   }
 }
 ```
@@ -455,7 +455,7 @@ We'll be using a very functional style of coding and the latest best practices f
 At the command line (and with your project root folder as the working directory), type the following and hit the Enter key:
 
 ```bash
-yarn add ramda ramda-adjunct styled-components
+yarn add ramda ramda-adjunct styled-components react-router redux react-redux redux-observable rxjs
 ```
 
 That should install those libraries. Then we'll do another commit and push:
@@ -464,6 +464,50 @@ That should install those libraries. Then we'll do another commit and push:
 git add -A
 git commit -m "Add ramda, ramda-adjunct, styled-components"
 git push
+```
+
+Your final `package.json` file should look like this (version numbers may vary):
+
+```json
+{
+  "name": "tic-tac-toe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "ramda-adjunct": "^2.6.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-scripts": "1.1.4",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.18.0",
+    "rxjs": "^5.5.10",
+    "styled-components": "^3.2.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "format": "prettier-standard 'src/**/*js'",
+    "precommit": "lint-staged",
+    "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "prettier-standard": "^8.0.1"
+  }
+}
 ```
 
 Congratulations! You're ready to rock and roll with React and Tic-Tac-Toe. See you at the Summer of Tech 2018 Masterclass.
@@ -483,3 +527,25 @@ Ramda-adjunct adds a wealth of useful functions to Ramda so we don't have to rew
 Makes it easy for us to encapsulate our CSS styles in our components, and theme them as well.
 
 You might also consider watching this [talk about styled-components](https://www.youtube.com/watch?v=bIK2NwoK9xk).
+
+### [react-router](https://reacttraining.com/react-router/)
+
+"React Router is a collection of navigational components that compose declaratively with your application."
+
+### [redux](https://redux.js.org/)
+
+Redux is a predictable state container for JavaScript apps.
+
+### [react-redux](https://github.com/reactjs/react-redux)
+
+The React bindings for Redux. (Makes Redux and React work together easily.)
+
+For the curious, [a video on react-redux by Dan Abramov](https://www.youtube.com/watch?v=VJ38wSFbM3A)
+
+### [redux-observable](https://redux-observable.js.org/)
+
+"RxJS 5-based middleware for Redux. Compose and cancel async actions to create side effects and more."
+
+### [rxjs](http://reactivex.io/rxjs/)
+
+"RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code."
