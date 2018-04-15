@@ -1,13 +1,15 @@
 # Summner of Tech 2018
 ## JavaScript (React) Masterclass, Part 1
 
+**IMPORTANT NOTE:** You can manage this class _even if you've never programmed in JavaScript before_. We'll get you through setting up and building a simple Web application, and then you can go back through the code as often as you like, studying each step&mdash;we've documented every step fully&mdash;until you've got it down.
+
+## Setup
+
 **Please install the following software _before_ attending the class.** We will not have time to work with you individually or to wait while you install software during the class&mdash;especially if many people are attempting to download simultaneously. If you really can't get everything installed&mdash;even after searching for help online&mdash;then please contact us through Summer of Tech and we'll try to help.
 
 **For the best masterclass experience**, take the time to get everything installed correctly and make sure it's running properly. We're, like, serious about this.
 
 **Note:** If you don't want to set everything up on your own laptop, or if your laptop is a bit old, or you'd just rather work online, then you can follow [these instructions for using CodeSandbox.io](./code-sandbox-README.md). We recommend signing in with a GitHub account (and registering with GitHub if you don't already have one).
-
-## Setup
 
 If you have access to a Mac (or a Linux laptop), you'll find this process much easier. But if you must use Windows, you'll find plenty of help online, so don't despair. Windows, especially Windows 10, has made working with Node much easier.
 
@@ -456,6 +458,7 @@ At the command line (and with your project root folder as the working directory)
 
 ```bash
 yarn add ramda ramda-adjunct styled-components react-router redux react-redux redux-observable rxjs
+yarn add -D enzyme enzyme-adapter-react-16 enzyme-to-json jest-enzyme react-test-renderer
 ```
 
 That should install those libraries. Then we'll do another commit and push:
@@ -503,9 +506,14 @@ Your final `package.json` file should look like this (version numbers may vary):
     }
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "husky": "^0.14.3",
+    "jest-enzyme": "^6.0.0",
     "lint-staged": "^7.0.4",
-    "prettier-standard": "^8.0.1"
+    "prettier-standard": "^8.0.1",
+    "react-test-renderer": "^16.3.1"
   }
 }
 ```
@@ -549,3 +557,25 @@ For the curious, [a video on react-redux by Dan Abramov](https://www.youtube.com
 ### [rxjs](http://reactivex.io/rxjs/)
 
 "RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code."
+
+yarn add -D enzyme enzyme-adapter-react-16 enzyme-to-json jest-enzyme react-test-renderer
+
+### [enzyme](http://airbnb.io/enzyme/)
+
+"Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output."
+
+### [enzyme-adapter-react-16](https://github.com/airbnb/enzyme/tree/master/packages/enzyme-adapter-react-16)
+
+Just something Enzyme needs to work with React version 16. Don't worry about it.
+
+### [enzyme-to-json](https://github.com/adriantoine/enzyme-to-json)
+
+Makes our Enzyme snapshots prettier. You'll see.
+
+### [jest-enzyme](https://github.com/FormidableLabs/enzyme-matchers)
+
+Makes Enzyme work better with [Jest](https://facebook.github.io/jest/), which is what we'll be using for our tests.
+
+### [react-test-renderer](https://reactjs.org/docs/test-renderer.html)
+
+Allows us to "render" our React components for testing without having to have a browser. Much faster.
