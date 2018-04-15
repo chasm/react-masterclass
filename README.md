@@ -448,4 +448,38 @@ It will look like this in the terminal:
 
 Check your code on GitHub by reloading the page and you should see all the latest changes there.
 
+## Adding a couple of utilities
+
+We'll be using a very functional style of coding and the latest best practices for our Tic-Tac-Toe app. Why not? So we're going to add a few libraries that we'll need later. Let's do it now.
+
+At the command line (and with your project root folder as the working directory), type the following and hit the Enter key:
+
+```bash
+yarn add ramda ramda-adjunct styled-components
+```
+
+That should install those libraries. Then we'll do another commit and push:
+
+```bash
+git add -A
+git commit -m "Add ramda, ramda-adjunct, styled-components"
+git push
+```
+
 Congratulations! You're ready to rock and roll with React and Tic-Tac-Toe. See you at the Summer of Tech 2018 Masterclass.
+
+You can also get a head start by reading up on these utilities:
+
+### [ramda](http://ramdajs.com/)
+
+Ramda gives us a host of powerful functions for manipulating data. The [Ramda docs](http://ramdajs.com/docs/) can take a little getting used to, but the examples help a lot. And the [Ramda REPL](http://ramdajs.com/repl/) is a great place to play around with Ramda. You can [bookmark your code](http://ramdajs.com/repl/?v=0.25.0#?const%20colours%20%3D%20%5B%27red%27%2C%20%27yellow%27%2C%20%27green%27%2C%20%27cyan%27%2C%20%27blue%27%2C%20%27magenta%27%5D%0A%0Aconst%20fourLetter%20%3D%20filter%28pipe%28length%2C%20equals%284%29%29%29%0A%0AfourLetter%28colours%29) and come right back to it later or send the link to a friend.
+
+### [ramda-adjunct](https://char0n.github.io/ramda-adjunct/)
+
+Ramda-adjunct adds a wealth of useful functions to Ramda so we don't have to rewrite them ourselves.
+
+### [styled-components](https://www.styled-components.com/)
+
+Makes it easy for us to encapsulate our CSS styles in our components, and theme them as well.
+
+You might also consider watching this [talk about styled-components](https://www.youtube.com/watch?v=bIK2NwoK9xk).
