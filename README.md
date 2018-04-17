@@ -458,7 +458,7 @@ At the command line (and with your project root folder as the working directory)
 
 ```bash
 yarn add ramda ramda-adjunct styled-components react-router redux react-redux redux-observable rxjs
-yarn add -D enzyme enzyme-adapter-react-16 enzyme-to-json jest-enzyme jest-styled-components react-test-renderer
+yarn add -D enzyme enzyme-adapter-react-16 enzyme-to-json jest-enzyme jest-styled-components react-test-renderer redux-mock-store
 ```
 
 That should install those libraries. Then we'll do another commit and push:
@@ -514,7 +514,8 @@ Your final `package.json` file should look like this (version numbers may vary):
     "jest-styled-components": "^5.0.1",
     "lint-staged": "^7.0.4",
     "prettier-standard": "^8.0.1",
-    "react-test-renderer": "^16.3.1"
+    "react-test-renderer": "^16.3.1",
+    "redux-mock-store": "^1.5.1"
   }
 }
 ```
