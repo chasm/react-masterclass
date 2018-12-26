@@ -1,4 +1,7 @@
 # Summner of Tech 2018
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/chasm/react-masterclass.svg)](https://greenkeeper.io/)
+
 ## JavaScript (React) Masterclass, Part 1
 
 **IMPORTANT NOTE:** You can manage this class _even if you've never programmed in JavaScript before_. We'll get you through setting up and building a simple Web application, and then you can go back through the code as often as you like, studying each step&mdash;we've documented every step fully&mdash;until you've got it down.
